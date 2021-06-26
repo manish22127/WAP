@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+</head>
+<body>
+    <h1>login</h1>
+
+
+    <form>
+        <input type="text" id="username" value="">
+        <input type="password" id="password" value="">
+        <input type="submit" value="submit" onclick="abc(this.form)">
+        <input type="reset" value="reset">
+    </form>
+
+    <script language="javascript">
+        var ch_username= /^1[A-ZA-Z0-90-9A-ZA-ZA-Z0-90-9]{9}$/;
+        var ch_password= /^(?=.*\d)(?=.*[!@#$%^&])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+        function abc(form){
+            var uid=form.username.value;
+            var psw=form.password.value;
+
+            if (!ch_username.test(uid) || !ch_password.test(psw)){
+                alert("envalid credentials");
+            }
+            else{
+                alert("login successful");
+                var d = new Date();
+                document.write(d);
+                document.bgColor="red";
+            }
+        }
+    </script>
+</body>
+</html>
