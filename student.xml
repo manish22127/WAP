@@ -1,0 +1,16 @@
+<student-info>
+<student>
+<usn>1RV20MCA01</usn>
+<name>RAHUL</name>
+<college>RV COLLEGE</college>
+<city>benaluru</city>
+<year>2021</year>
+</student>
+<student>
+<usn>1RV20MCA02</usn>
+<name>SATISH</name>
+<college>RV COLLEGE</college>
+<city>benaluru</city>
+<year>2021</year>
+</student>
+</student-info>
